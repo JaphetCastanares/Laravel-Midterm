@@ -1,0 +1,258 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #00fb3b;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(white, #e8f5e9); /* Gradient background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gradient background sections */
+.gradient-bg, .gradient-bg2 {
+    background: linear-gradient(135deg, #28a745, #66bb6a);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gradient-bg2 {
+    padding: 100px 20px; /* Larger padding for second gradient */
+}
+
+/* Header & Footer */
+header, footer {
+    background: #28a745;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer {
+    padding: 10px 0;
+}
+
+/* Section styles */
+.section {
+    padding: 30px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card styles */
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Large text for .left class */
+.left {
+    font-size: 200%;
+    margin-left: 10px;
+}
+
+/* Input Text Field Styles */
+.input-text {
+    width: 97%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-text:focus {
+    border-color: #81c784;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Button Styles */
+.button-container {
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #727272;
+    border-color: #ccc;
+}
+
+/* Sport Item Styles */
+.sport {
+    background: white;
+    border: 1px solid #c8e6c9;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Status Styles */
+.full {
+    color: red;
+    font-weight: bold;
+}
+
+.available {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Participant List Styles */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 5px 0;
+}
+
+/* Specific button styling for edit */
+.edit { 
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-left: 5px; /* Space between buttons */
+    background-color: #4CAF50; /* Green background for Edit */
+    color: white; /* White text */
+}
+.edit:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+.delete {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-left: 5px; /* Space between buttons */
+    background-color: #f44336; /* Red background for Delete */
+    color: white; /* White text */
+}
+.delete:hover{
+    background-color: #e53935; /* Darker red on hover */
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; /* Spacing between list items */
+}
+.li span.participant-info {
+    flex-grow: 1; /* Takes up available space */
+    margin-right: 10px; /* Space between text and buttons */
+}
+.unordered {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+.button-group {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+.select-box {
+    width: 35%; /* Full width */
+    padding: 10px;
+    font-size: 16px; /* Font size for readability */
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: white; /* White background */
+    color: #333; /* Text color */
+    appearance: none; /* Remove default arrow for custom styling */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Custom arrow for the select box */
+.select-box::after {
+    content: '\25BC'; /* Unicode for down arrow */
+    font-size: 12px;
+    color: #333;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Hover and Focus states */
+.select-box:hover {
+    border-color: #81c784; /* Lighter green border on hover */
+}
+
+.select-box:focus {
+    border-color: #81c784; /* Lighter green on focus */
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5); /* Green shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Optional: Disabled state */
+.select-box:disabled {
+    background-color: #e0e0e0;
+    color: #999; /* Greyed out for disabled state */
+    cursor: not-allowed;
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .button {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .sport {
+        padding: 10px;
+    }
+}
